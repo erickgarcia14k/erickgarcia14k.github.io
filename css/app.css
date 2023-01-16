@@ -1,0 +1,51 @@
+html{
+	font-size: 62.5%; /*Convierte 1 rem en 10px*/
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+	line-height: 2; /*Ocupamos un interlneado de 2*/
+}
+
+
+/*Selectores*/
+
+h1,h2,h3{
+	font-family: 'Playfair Display', serif;
+}
+
+h1{
+	font-size: 3.8rem;
+}
+/*Programando en un tamaño más pequeño */
+@media (min-widht:768px){
+	h1{
+		font-size: 5rem;
+	}
+}
+
+/*Color de la letra del nombre cuando se hace pequeño el menu*/
+.nombre-sitio{
+	color: blue !important; /*Se establece important para que esta modificacion este sobre la que esta por default*/
+}
+
+/*dispositivo mas pequeño*/
+
+
+.hero {
+    background-image: url(../img/poster.jpg);
+    height: 25rem;
+    background-size: cover;/*llenar todo el espacio disponile */
+    background-position: center center;
+}
+/*Para tamaños de pantallas mas grandes*/
+@media (min-width: 768px) {
+	/*Que cuando llegue a ese tamaño la imagen llegue a esa altura*/
+    .hero {
+        height: 55rem; /*55rem x 100px*/
+    }
+}
+
+
+

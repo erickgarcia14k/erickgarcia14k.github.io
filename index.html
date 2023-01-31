@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tienda</title>
+	<title>AmarokPhone</title>
 	<!--playfair display bold 700, Releway regular 400,bold 700, black 900--> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,35 +16,23 @@
 <body>
 	<!--Aplicando un padding=py-->
 	<header class="py-5">
-		<h1 class="text-center">Renta <span class="text-primary">Rodriguez</span></h1>
-	</header>
-
-	<!--d-flex(display flex) -->
-	<!--flex-md.row (cambia el tamaño a mediano y cambia la direccion con row) -->
-	<!--justify-content-md-beteween distribuirlos solo en el tamaño mediano, y los distribuya con between -->
-	<div class="border-top py-4">  <!--borde en la tapa de arriba, py(padding en la parte superior)-->
-		<!--Agregando algunos estilos para que el nav que cuando detecte un display 
-		mas grande desaparezca en botton de collapse y aparezca el menu normal, container(centrar)
-		navbar-light(para que aparezca mi icono, color blanco) -->
+		<h1 class="text-center">Amarok<span class="text-primary">Phone</span></h1>
+	</header>	
+	<div class="border-top py-4"> 
 		<div class="navbar navbar-expand-lg container  navbar-light ">
-			<!--Este solo saldra en dispositivos más pequeños-->
-			<!-- En un display (d) , grande (xl) , no se debe de mostrar(none), font-size (fs)
-				font-weight(fw)-->
+			
 			<a  class="navbar-brand nombre-sitio d-lg-none fs-2 fw-bold text-uppercase" href="index.html">
-				Renta de Maquinaria
+				Especialistas en La tecnología 
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
 				<span class="navbar-toggler-icon"></span>
 				
-			</button>
-			<!-- Aqui se aplicara un JS para la funcion-->
-			<!--Se debenn guardar las transiciones- collapse,navbar-collapse -->
+			</button>			
 			<div id="navegacion" class="collapse navbar-collapse">
-				<nav class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center">
-				<!--text-dark texto negro, decoration quitar subrayado-->
+				<nav class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center">			
 				<a class="text-dark text-decoration-none" href="">Inicio</a>
 				<a class="text-dark text-decoration-none" href="">Nosotros</a>
-				<a class="text-dark text-decoration-none" href="">Maquinaria</a>
+				<a class="text-dark text-decoration-none" href="">Trabajos</a>
 				<a class="text-dark text-decoration-none" href="">Galeria</a>
 				<a class="text-dark text-decoration-none" href="">Galeria</a>
 				<a class="text-dark text-decoration-none" href="">Contacto</a>				
@@ -54,6 +42,50 @@
 	</div>
 	<!--Division para la imagen -->
 	<div class="hero"></div>
+
+	<main class="container-xl py-5">
+        <h2 class="text-center my-5">Nuestros Servicios</h2>
+       <div class="row g-0 pt-5 mb-4">
+            <div class="col-md-8 producto">
+                <img class="img-fluid" src="img/1.jpg" alt="imagen producto">
+            </div>
+            <div class="col-md-4 bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+                <h3>Microsoldadura</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deleniti sed recusandae vitae architecto molestiae, eos corrupti</p>
+                <p class="fs-1 fw-bold">LAPTOPS & SMARTHPHONES</p>
+                <a class="btn btn-success fs-3 fw-bold text-uppercase py-3" href="#">Saber más..</a>
+            </div>
+        </div>
+
+		<div class="row">
+			<div class="col-md-6">
+				1
+			</div>
+
+			<div class="col-md-6">
+				2
+			</div>		
+			
+		</div>	
+
+		<div class="row">
+			<div class="col-md-4">
+				1
+				
+			</div>
+
+			<div class="col-md-4">
+				2
+				
+			</div>
+
+			<div class="col-md-4">
+				3
+				
+			</div>
+			
+		</div>		
+	</main>
 
 
 

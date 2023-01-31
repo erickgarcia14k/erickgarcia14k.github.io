@@ -1,3 +1,8 @@
+:root{
+	--bs-blue:#08A7B1;
+	--bs-green:#F07B20;
+}
+
 html{
 	font-size: 62.5%; /*Convierte 1 rem en 10px*/
 }
@@ -25,16 +30,41 @@ h1{
 	}
 }
 
+h2{
+	font-size: 3.2rem;
+}
+@media (min-widht:768px){
+	h2{
+		font-size: 4rem;
+	}
+}
+
+h3{
+	font-size: 2.4rem;
+}
+@media (min-widht:768px){
+	h3{
+		font-size: 3rem;
+	}
+}
+
 /*Color de la letra del nombre cuando se hace pequeño el menu*/
 .nombre-sitio{
 	color: blue !important; /*Se establece important para que esta modificacion este sobre la que esta por default*/
+}
+
+.btn-success{
+	background-color: var(--bs-green)!important;
+}
+.bg-primary{
+	background-color: var(--bs-blue)!important;
 }
 
 /*dispositivo mas pequeño*/
 
 
 .hero {
-    background-image: url(../img/poster.jpg);
+    background-image: url(../img/inicio.jpg);
     height: 25rem;
     background-size: cover;/*llenar todo el espacio disponile */
     background-position: center center;
@@ -44,6 +74,19 @@ h1{
 	/*Que cuando llegue a ese tamaño la imagen llegue a esa altura*/
     .hero {
         height: 55rem; /*55rem x 100px*/
+    }
+}
+
+/*Clase producto*/
+
+
+/*Cuando llegue a tamaño mediano realizara*/
+@media (min-width: 768px) {
+	/*Que cuando llegue a ese tamaño la imagen llegue a esa altura*/
+    .producto img {
+        height: 43rem; /*55rem x 100px*/
+        width: 100%;
+        object-fit: cover;
     }
 }
 
